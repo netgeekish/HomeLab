@@ -8,7 +8,7 @@ services:
       - TZ=Europe/London
       - FIREFOX_CLI=https://www.linuxserver.io/ #optional
     volumes:
-      - firefox/config:/config
+      - firefox:/config
     ports:
       - 3000:3000
       - 3001:3001
