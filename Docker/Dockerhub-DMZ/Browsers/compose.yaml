@@ -9,9 +9,7 @@ services:
       - FIREFOX_CLI=https://www.linuxserver.io/ #optional
     volumes:
       - firefox:/config
-      - type: bind
-        source: /PVE-NAS/Downloads
-        destination: /config/Downloads
+      - /PVE-NAS/Downloads:/config/Downloads
     ports:
       - 3000:3000
       - 3001:3001
