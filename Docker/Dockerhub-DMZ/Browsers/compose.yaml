@@ -11,7 +11,7 @@ services:
       - firefox:/config
       - type: bind
         source: /PVE-NAS/Downloads
-        destination: config/Downloads
+        destination: /config/Downloads
     ports:
       - 3000:3000
       - 3001:3001
